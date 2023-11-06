@@ -1,15 +1,15 @@
 
 :root {
-    --background-color: #dedede;
-    --base-link-color: #ffffff;
+    --background-color: #f3f3f3;
+    --base-link-color: #000000;
     --primary-color: #8C8BDA;
     --secondary-color: #000;
     --accent-color: #555;
     --testimonial-color1: rgba(178, 162, 222, 1);
     --testimonial-color2: rgba(223, 196, 133,1);
 
-    --font-primary: 'Roboto', sans-serif;
-    --font-secondary: 'Outfit', sans-serif;
+    --font-primary: 'Optima', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
 
     --base-font-size: 1rem;
     --h1-font-size: 4rem;
@@ -21,7 +21,7 @@
 
 body {
     background: var(--background-color);
-    color: white;
+    color: rgb(0, 0, 0);
     font: var(--base-font-size) / 1.6 var(--font-primary);
 
 }
