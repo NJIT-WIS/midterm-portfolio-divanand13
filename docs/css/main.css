@@ -81,7 +81,7 @@ header {
 }
 
 .hero {
-    display: flex;
+    text-align: center;
     justify-content: space-between;
     height: 474px;
     font: 2rem / 1.6 var(--font-primary);
