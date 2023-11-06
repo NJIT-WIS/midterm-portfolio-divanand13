@@ -175,3 +175,42 @@ a.alt-pill-link {
     border: 2px solid #89beb1;
     background: rgba(161,214,214,0.00);
 }
+.about-projects {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me,
+.projects {
+    width: 45%; /* Adjust the width as needed */
+    margin: 20px;
+}
+
+.about-me h2,
+.projects h2 {
+    font-weight: bold;
+}
+
+.about-me-text,
+.projects-text {
+    font-size: 14px;
+}
+
+.projects {
+    position: relative;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.image-container {
+    display: flex;
+}
+
+.about-me-image {
+    width: 50%; 
+    margin: 5px;
+   
+}
