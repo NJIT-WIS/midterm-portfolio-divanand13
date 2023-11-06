@@ -88,6 +88,11 @@ header {
     position: relative;
 }
 
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .hero::after {
     content: "";
     background: var(--background-color) url(../images/computer.png) no-repeat;
