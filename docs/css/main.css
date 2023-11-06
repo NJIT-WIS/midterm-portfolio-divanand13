@@ -70,7 +70,7 @@ header {
     text-align: center;
     justify-content: space-between;
     height: 474px;
-    font: 2rem / 1.6 var(--font-primary);
+    font: 1.2rem / 1.6 var(--font-primary);
     position: relative;
 }
 
@@ -78,6 +78,29 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hero-image {
+    width: 500px;
+    height: 500px;
+    margin-right: 100px;
+    z-index: 1;
+    position: absolute;
+}
+.hero-image::before {
+    content: ""; /* Used to display the image */
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: url('images/divjotanand.jpeg') center / cover no-repeat; /* Set your image */
+}
+
+.circular-image {
+    border-radius: 250px;
+    width: 350px;
+    height: 350px;
+    margin-right: 50px;
 }
 
 
@@ -88,73 +111,8 @@ footer {
     margin-top: 5rem;
 }
 
-.featured {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-}
 
-.text-container h2 {
-    text-align: left;
-    margin-bottom: 20px;
-}
 
-.image-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-}
-
-.hero-section {
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    color: #ffffff;
-    background-repeat: no-repeat;
-    height: calc(50vh - 5rem);
-    margin-bottom: 5rem;
-
-}
-
-.hero-section.task {
-    background-image: url(../images/task.png);
-    background-position: left;
-    justify-content: flex-end;
-    text-align: right;
-    height: 460px;
-}
-
-.hero-section.clip {
-    background-image: url(../images/clip.png);
-    background-position: right;
-    justify-content: flex-start;
-    text-align: left;
-    height: 309px;
-
-}
-
-.hero-content {
-    width: 50rem;
-}
-
-.ready {
-    display: flex;
-    height: 25rem;
-    background-color: var(--primary-color);
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-    border-radius: 50px;
-    align-items: center;
-
-}
 
 .pill-link-black-button a {
     display: inline-block;
@@ -170,36 +128,9 @@ footer {
     background-color: var(--accent-color);
 }
 
-.hero_center.ready {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.hero_center .hero-content {
-    text-align: center;
-}
 
-.hero_center .hero-content h1, .hero-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
 
-.hero_center .hero-content p, .hero content p {
-    font-size: 1.25rem;
-    margin-bottom: 20px;
-}
-
-.hero_center .hero-content a.pill-link-black-button,
-.hero-content a {
-    display: inline-block;
-    padding: 10px 30px;
-    border-radius: 50px;
-    background-color: var(--secondary-color);
-    color: #fff;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
 
 .hero_center .hero-content a.pill-link-black-button:hover,
 .hero-content a:hover {
@@ -213,91 +144,8 @@ footer {
     gap: 10px;
 }
 
-.column form input[type="email"] {
-    flex-grow: 1;
-    padding: 10px;
-    border-radius: 6px;
-    border: none;
-}
 
-.column form input[type="submit"] {
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 
-.column form input[type="submit"]:hover {
-    background-color: var(--acent-color);
-
-}
-
-.circular-image {
-    border-radius: 50px;
-    width: 119px;
-    height: 119px;
-}
-
-.testimonials-header {
-    text-align: center;
-    margin-bottom: 5rem;
-
-}
-
-.testimonials-header h2 {
-    margin-bottom: 10px;
-}
-
-.testimonial h2 {
-    margin-top: 4rem;
-}
-
-.testimonials-header p {
-    font-size: 1.25rem;
-    color: grey;
-
-}
-
-.tesstimonial-cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-    width: 100%;
-
-}
-
-.testimonial {
-    border: 1px solid grey;
-    border-radius: 5px;
-    padding: 20px;
-    box-sizing: border-box;
-    flex-basis: calc(33.33% - 20px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.testimonial .circular-image {
-    position: absolute;
-    top: -60px;
-}
-
-.testimonial-color1 {
-    background-color: var(--testimonial-color1);
-
-}
-
-.testimonial-color2 {
-    background-color: var(--testimonial-color2);
-}
 
 a.pill-link {
     display: inline-block;
@@ -320,80 +168,4 @@ a.alt-pill-link {
     padding: 15px 20px;
     border: 2px solid #89beb1;
     background: rgba(161,214,214,0.00);
-}
-@media screen and (max-width: 1024px) {
-    .hero {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-
-    .hero h1 {
-        font-size: calc(var[--h1-font-size] * 0.75);
-
-    }
-
-    .sub-text {
-        width: 80%
-    }
-
-    footer {
-        flex-direction: column;
-    }
-
-    .column {
-        margin-bottom: 20px;
-
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .hero {
-        background-image: none;
-
-    }
-
-    .hero h1 {
-        font-size: calc(var(--h1-font-size) * 0.5);
-    }
-    
-    .sub-text {
-        width: 90%;
-    }
-    .hero-section.clip, .hero-section.task {
-        background-image: none;
-    }
-
-    .tesstimonial-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .testimonial {
-        margin-top: 5rem;
-        flex-basis: 100%;
-    }
-
-    
-}
-
-@media screen and (max-width: 400px) {
-    main {
-        padding: 0 20px;
-    }
-
-    .hero h1 {
-        font-size: calc(var(--h1-font-size) * 0.4);
-    }
-
-    .sub-text {
-        width: 100%;
-    }
 }
