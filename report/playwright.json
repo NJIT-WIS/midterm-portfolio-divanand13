@@ -1,0 +1,829 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\playwright.config.js",
+    "rootDir": "C:/Users/lewis/Documents/midterms/midterm-portfolio-divanand13/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 12
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ],
+      [
+        "html"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/lewis/Documents/midterms/midterm-portfolio-divanand13/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/lewis/Documents/midterms/midterm-portfolio-divanand13/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.40.0",
+    "workers": 12,
+    "webServer": {
+      "command": "npm run start",
+      "url": "http://127.0.0.1:3000",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "site.spec.js",
+      "file": "site.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Check Page Title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 632,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-27T01:10:59.986Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ac7a53c57781e60bbd6-fdd124124d11bd756262",
+          "file": "site.spec.js",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "Check Logo in Header",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 683,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-27T01:10:59.982Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ac7a53c57781e60bbd6-f3da8670b8211fdff876",
+          "file": "site.spec.js",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "Check Navigation Menu in Header",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 603,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-27T01:10:59.997Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ac7a53c57781e60bbd6-b5df147924d9471a6f7c",
+          "file": "site.spec.js",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "Check Hero Section",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "failed",
+                  "duration": 429,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Hello, I \u001b[7ma\u001b[27mm Divjot Anand\"\u001b[39m\nReceived: \u001b[31m\"Hello, I \u001b[7mA\u001b[27mm Divjot Anand\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Hello, I \u001b[7ma\u001b[27mm Divjot Anand\"\u001b[39m\nReceived: \u001b[31m\"Hello, I \u001b[7mA\u001b[27mm Divjot Anand\"\u001b[39m\n    at C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js:44:56",
+                    "location": {
+                      "file": "C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js",
+                      "column": 56,
+                      "line": 44
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 42 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 43 |\u001b[39m test(\u001b[32m'Check Hero Section'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m   expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.hero h1'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(expectedHeroTitle)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m   expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.hero .sub-text'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(expectedHeroSubText)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 46 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js",
+                        "column": 56,
+                        "line": 44
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Hello, I \u001b[7ma\u001b[27mm Divjot Anand\"\u001b[39m\nReceived: \u001b[31m\"Hello, I \u001b[7mA\u001b[27mm Divjot Anand\"\u001b[39m\n\n\u001b[0m \u001b[90m 42 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 43 |\u001b[39m test(\u001b[32m'Check Hero Section'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m   expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.hero h1'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(expectedHeroTitle)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m   expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.hero .sub-text'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(expectedHeroSubText)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 46 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js:44:56\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-27T01:10:59.988Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js",
+                    "column": 56,
+                    "line": 44
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ac7a53c57781e60bbd6-f939ee4bd50a4679fac7",
+          "file": "site.spec.js",
+          "line": 43,
+          "column": 1
+        },
+        {
+          "title": "Check Links in Hero Section",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 684,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-27T01:10:59.983Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ac7a53c57781e60bbd6-25e0f9e1c255b3cba4d9",
+          "file": "site.spec.js",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "Check Featured Section",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "status": "timedOut",
+                  "duration": 30004,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js",
+                        "column": 45,
+                        "line": 54
+                      },
+                      "message": "Error: locator.textContent: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.featured h2')\u001b[22m\n\n\n\u001b[0m \u001b[90m 52 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 53 |\u001b[39m test(\u001b[32m'Check Featured Section'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 54 |\u001b[39m   expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.featured h2'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(expectedFeaturedTitle)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 55 |\u001b[39m   \u001b[36mconst\u001b[39m imageCount \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.featured .image-container img'\u001b[39m)\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 56 |\u001b[39m   expect(imageCount)\u001b[33m.\u001b[39mtoBe(expectedFeaturedImageCount)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js:54:45\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-27T01:10:59.997Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ac7a53c57781e60bbd6-ee0651ff7721e1d4f155",
+          "file": "site.spec.js",
+          "line": 53,
+          "column": 1
+        },
+        {
+          "title": "Check About Section",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "status": "timedOut",
+                  "duration": 30013,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js",
+                        "column": 42,
+                        "line": 60
+                      },
+                      "message": "Error: locator.textContent: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('#about h2')\u001b[22m\n\n\n\u001b[0m \u001b[90m 58 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m test(\u001b[32m'Check About Section'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 60 |\u001b[39m   expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#about h2'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(expectedAboutTitle)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 62 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 63 |\u001b[39m test(\u001b[32m'Check Buy Section'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\n\u001b[2m    at C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js:60:42\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-27T01:10:59.988Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ac7a53c57781e60bbd6-7bebc3119782be41e195",
+          "file": "site.spec.js",
+          "line": 59,
+          "column": 1
+        },
+        {
+          "title": "Check Buy Section",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "status": "timedOut",
+                  "duration": 30000,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js",
+                        "column": 40,
+                        "line": 64
+                      },
+                      "message": "Error: locator.textContent: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('#buy h2')\u001b[22m\n\n\n\u001b[0m \u001b[90m 62 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 63 |\u001b[39m test(\u001b[32m'Check Buy Section'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 64 |\u001b[39m   expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#buy h2'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(expectedBuyTitle)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 65 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 66 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 67 |\u001b[39m test(\u001b[32m'Check Testimonials Section'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\n\u001b[2m    at C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js:64:40\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-27T01:10:59.986Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ac7a53c57781e60bbd6-3cf81da93bd9c34f5086",
+          "file": "site.spec.js",
+          "line": 63,
+          "column": 1
+        },
+        {
+          "title": "Check Testimonials Section",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "status": "timedOut",
+                  "duration": 30008,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js",
+                        "column": 56,
+                        "line": 68
+                      },
+                      "message": "Error: locator.textContent: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.testimonials-header h2')\u001b[22m\n\n\n\u001b[0m \u001b[90m 66 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 67 |\u001b[39m test(\u001b[32m'Check Testimonials Section'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 68 |\u001b[39m   expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.testimonials-header h2'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(expectedTestimonialsTitle)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 69 |\u001b[39m   \u001b[36mconst\u001b[39m testimonialCount \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.testimonial-cards .testimonial'\u001b[39m)\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 70 |\u001b[39m   expect(testimonialCount)\u001b[33m.\u001b[39mtoBe(expectedTestimonialCount)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 71 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js:68:56\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-27T01:11:00.000Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ac7a53c57781e60bbd6-17e675f2677c90decbf2",
+          "file": "site.spec.js",
+          "line": 67,
+          "column": 1
+        },
+        {
+          "title": "Check Ready Section",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "status": "timedOut",
+                  "duration": 30010,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js",
+                        "column": 42,
+                        "line": 74
+                      },
+                      "message": "Error: locator.textContent: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.ready h2')\u001b[22m\n\n\n\u001b[0m \u001b[90m 72 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 73 |\u001b[39m test(\u001b[32m'Check Ready Section'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 74 |\u001b[39m   expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.ready h2'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(expectedReadyTitle)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 75 |\u001b[39m   \u001b[36mconst\u001b[39m readyLinkCount \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.ready a'\u001b[39m)\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 76 |\u001b[39m   expect(readyLinkCount)\u001b[33m.\u001b[39mtoBe(expectedReadyLinkCount)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 77 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js:74:42\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-27T01:11:00.001Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ac7a53c57781e60bbd6-f9b496fb917a53aea446",
+          "file": "site.spec.js",
+          "line": 73,
+          "column": 1
+        },
+        {
+          "title": "Check Footer",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "status": "passed",
+                  "duration": 557,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-27T01:10:59.989Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ac7a53c57781e60bbd6-7965f5b9d708a3554161",
+          "file": "site.spec.js",
+          "line": 79,
+          "column": 1
+        },
+        {
+          "title": "Check SEO Meta Description",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "status": "failed",
+                  "duration": 585,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"This is an example NFT website coded from a Figma tutorial\"\u001b[39m\nReceived: \u001b[31m\"Div Personal Portfolio\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"This is an example NFT website coded from a Figma tutorial\"\u001b[39m\nReceived: \u001b[31m\"Div Personal Portfolio\"\u001b[39m\n    at C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js:86:27",
+                    "location": {
+                      "file": "C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js",
+                      "column": 27,
+                      "line": 86
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 84 |\u001b[39m test(\u001b[32m'Check SEO Meta Description'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 85 |\u001b[39m   \u001b[36mconst\u001b[39m metaDescription \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetAttribute(\u001b[32m'meta[name=\"description\"]'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'content'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 86 |\u001b[39m   expect(metaDescription)\u001b[33m.\u001b[39mtoBe(expectedMetaDescription)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 87 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 88 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 89 |\u001b[39m test(\u001b[32m'Check SEO Meta Keywords'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js",
+                        "column": 27,
+                        "line": 86
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"This is an example NFT website coded from a Figma tutorial\"\u001b[39m\nReceived: \u001b[31m\"Div Personal Portfolio\"\u001b[39m\n\n\u001b[0m \u001b[90m 84 |\u001b[39m test(\u001b[32m'Check SEO Meta Description'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 85 |\u001b[39m   \u001b[36mconst\u001b[39m metaDescription \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetAttribute(\u001b[32m'meta[name=\"description\"]'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'content'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 86 |\u001b[39m   expect(metaDescription)\u001b[33m.\u001b[39mtoBe(expectedMetaDescription)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 87 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 88 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 89 |\u001b[39m test(\u001b[32m'Check SEO Meta Keywords'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\n\u001b[2m    at C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js:86:27\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-27T01:10:59.983Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js",
+                    "column": 27,
+                    "line": 86
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ac7a53c57781e60bbd6-31b5e1e8bd2b15bfeac5",
+          "file": "site.spec.js",
+          "line": 84,
+          "column": 1
+        },
+        {
+          "title": "Check SEO Meta Keywords",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "status": "passed",
+                  "duration": 226,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-27T01:11:01.579Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ac7a53c57781e60bbd6-b24ac5d9cabae3db2e44",
+          "file": "site.spec.js",
+          "line": 89,
+          "column": 1
+        },
+        {
+          "title": "Check Newsletter Form Elements",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "failed",
+                  "duration": 258,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js:98:40",
+                    "location": {
+                      "file": "C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js",
+                      "column": 40,
+                      "line": 98
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  96 |\u001b[39m   \u001b[36mconst\u001b[39m inputField \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m newsletterForm\u001b[33m.\u001b[39mlocator(\u001b[32m'input[type=\"email\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  97 |\u001b[39m   \u001b[36mconst\u001b[39m submitButton \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m newsletterForm\u001b[33m.\u001b[39mlocator(\u001b[32m'input[type=\"submit\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  98 |\u001b[39m   expect(\u001b[36mawait\u001b[39m inputField\u001b[33m.\u001b[39misVisible())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  99 |\u001b[39m   expect(\u001b[36mawait\u001b[39m submitButton\u001b[33m.\u001b[39misVisible())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 100 |\u001b[39m   expect(\u001b[36mawait\u001b[39m submitButton\u001b[33m.\u001b[39mgetAttribute(\u001b[32m'value'\u001b[39m))\u001b[33m.\u001b[39mtoBe(expectedSubmitButtonText)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 101 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js",
+                        "column": 40,
+                        "line": 98
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m  96 |\u001b[39m   \u001b[36mconst\u001b[39m inputField \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m newsletterForm\u001b[33m.\u001b[39mlocator(\u001b[32m'input[type=\"email\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  97 |\u001b[39m   \u001b[36mconst\u001b[39m submitButton \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m newsletterForm\u001b[33m.\u001b[39mlocator(\u001b[32m'input[type=\"submit\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  98 |\u001b[39m   expect(\u001b[36mawait\u001b[39m inputField\u001b[33m.\u001b[39misVisible())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  99 |\u001b[39m   expect(\u001b[36mawait\u001b[39m submitButton\u001b[33m.\u001b[39misVisible())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 100 |\u001b[39m   expect(\u001b[36mawait\u001b[39m submitButton\u001b[33m.\u001b[39mgetAttribute(\u001b[32m'value'\u001b[39m))\u001b[33m.\u001b[39mtoBe(expectedSubmitButtonText)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 101 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js:98:40\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-27T01:11:01.601Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\lewis\\Documents\\midterms\\midterm-portfolio-divanand13\\tests\\site.spec.js",
+                    "column": 40,
+                    "line": 98
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ac7a53c57781e60bbd6-c4ebf9110905c4bc3558",
+          "file": "site.spec.js",
+          "line": 94,
+          "column": 1
+        },
+        {
+          "title": "Check All Navigation Links",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 228,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-27T01:11:01.648Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ac7a53c57781e60bbd6-3fd69b9537207d933e90",
+          "file": "site.spec.js",
+          "line": 103,
+          "column": 1
+        },
+        {
+          "title": "Check All Featured Company Logos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 202,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-27T01:11:01.707Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ac7a53c57781e60bbd6-d408da6a317a78265b4d",
+          "file": "site.spec.js",
+          "line": 114,
+          "column": 1
+        },
+        {
+          "title": "Check All Testimonials",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 192,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-27T01:11:01.719Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ac7a53c57781e60bbd6-849b4b4514a1763031aa",
+          "file": "site.spec.js",
+          "line": 125,
+          "column": 1
+        },
+        {
+          "title": "Check All Footer Links",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "status": "passed",
+                  "duration": 278,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-27T01:11:02.192Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ac7a53c57781e60bbd6-6a46c5751a4ecced0972",
+          "file": "site.spec.js",
+          "line": 135,
+          "column": 1
+        },
+        {
+          "title": "Check All Footer Icons",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "status": "passed",
+                  "duration": 280,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-27T01:11:02.214Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ac7a53c57781e60bbd6-8a30e1d69c9bb147c0bb",
+          "file": "site.spec.js",
+          "line": 145,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2023-11-27T01:10:59.351Z",
+    "duration": 31911.471,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 8,
+    "flaky": 0
+  }
+}
